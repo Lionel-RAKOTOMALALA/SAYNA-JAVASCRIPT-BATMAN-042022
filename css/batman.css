@@ -1,0 +1,472 @@
+body{
+    background-color: #000000;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+.border-left{
+    width: 4px;
+    opacity: 0.5;
+    background-color: #c4c4c4;
+    position: absolute;
+    left:102px;
+    z-index: 1;
+    height: 6350px;
+}
+
+.border-right{
+    width: 4px;
+    opacity: 0.5;
+    background-color: #c4c4c4;
+    position: absolute;
+    right:102px;
+    z-index: 1;
+    height: 6350px;
+}
+
+.brorder-top{
+    opacity: 0.5;
+    height: 4px;
+    background-color: #c4c4c4;
+    position: absolute;
+    right:102px;
+    left: 102px;
+    z-index: 1;
+}
+
+header{
+    width: 90%;
+    border-top:none;
+    margin: auto;
+}
+
+.headers{
+    background-image: url("../Assets/Illustrations/Home/Bathome1.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    z-index: 1;
+}
+.logo{
+    padding-bottom: 5%;
+    overflow: hidden;
+}
+
+header nav{
+    justify-content: space-around;
+}
+
+.contenue{
+    margin-top: 20%;
+}
+
+
+header nav a{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+header nav a span{
+    display: block;
+    background-color: #ffffff;
+    height: 2px;
+    width: 0%;
+    transition: 0.2s;
+}
+
+.scroll img{
+    margin-bottom: 15%;
+}
+
+.copy{
+    margin-top: 8%;
+}
+
+.scroll >*{
+    display:block;
+    margin: auto;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.scroll{
+    right: 51px;
+    position: absolute  ;
+    top:35%;
+    z-index: 2;
+    text-align: center;
+
+}
+
+.active{
+     font-weight: bolder;
+} 
+
+.active >span{
+    width: 100%;
+}
+
+
+.button{
+    padding: 12px;
+    min-width: 210px;
+    margin: 20px;
+    background: linear-gradient(45deg,rgba(255, 255, 255, 0.233),#b11313);
+    border: none;
+    font-size: 20px;
+}
+
+
+/* hover sur les boutons */
+.button:hover{
+    background: linear-gradient(45deg,rgba(255, 255, 255, 1),#b11313);
+    transition: 1s;
+}
+
+.image-scroll-btn{
+   height: 500px;
+   background-color: #000000;
+}
+
+
+ .image-scroll-btn div{
+    text-align: center;
+    z-index: 0;
+}
+
+
+ .card-container{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.image-scroll-btn div  img{
+   margin-top:100px;
+   cursor: pointer;
+}
+.blockInfade{
+    transform: translateX(-1000px);
+    transition: 1s;
+}
+
+.imgZoom{
+    zoom: 0%;
+    transform: scale(0);
+    transition:1s;
+    overflow: hidden;
+}
+
+.imgZoom img:hover{
+    transform: scale(1.05);
+    transition:0.5s;
+}
+.imgZoom img:hover>*{
+    position: relative;
+}
+.personnage-description{
+    position:absolute;
+    bottom:-120px;
+    padding: 10px;
+    left: 0;
+    width: 100%;
+    background-color: #b11313;
+    transition: 0.5s;
+    color: #ffffff;
+    overflow: hidden;
+}
+.personnage-description img{
+    position: absolute;
+    top: -20px;
+    width: 60px;
+}
+.personnage-description p{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+   width: 70%;
+   float: right;
+}
+.card-container .card-description h1,#multimedia{
+    color: #FFF;
+    font-size: 36px;
+}
+
+.titre,.nomJeu{
+    transform: translateX(-1000px);
+    opacity:1;
+    transition: 1s;
+}
+
+.sous_titre{
+    transition: 2s;
+    opacity:0;
+}
+
+h3{
+    font-size: 22px;
+}
+
+h2{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+#imgchan{
+    background-image: url('../Assets/Illustrations/Home/Batslider1.png');
+    background-size: cover;
+    min-height: 480px;
+    transition: 2s ease;
+}
+
+#font1{
+    font-size: 18px;
+    color: #c4c4c4;
+}
+
+#font2{
+    font-size: 12px;
+    color: #c4c4c4;
+}
+
+#nombre{
+    font-size: 18px;
+    color: #F8F184;
+}
+
+
+.multimedia{
+    background-color: #000000;
+}
+
+.slider{
+    overflow: hidden;
+    margin: 0%;
+    height: 100vh;
+}
+
+.slide-content .mutlimedia-description{
+    color: #ffffff;
+}
+
+.slider-container{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-content{
+    transform: translateX(-200%);
+    transition: 2s;
+    position: absolute;
+    display: flex;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    background-image: linear-gradient(to left top, #19587D55 ,#EDDEBF55);
+}
+
+.arrow{
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+
+}
+
+.message-container{
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+ 
+.messages{
+    transition: 2s;
+    display: none;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.messages-active{
+    display: block;
+}
+#prev{
+    position:absolute;
+    left:0;
+}
+
+
+#next{
+    position:absolute;
+    right:0;
+}
+
+.bande_annonce{
+    background-color: #000000;
+}
+
+.prendre_contact{
+    background-image: linear-gradient(-45deg,#183241,#3f3c3c);
+    color: #ffffff;
+}
+
+.popup{
+    background-image: linear-gradient(-45deg,#183241,#3f3c3c);
+    width:70%;
+    min-height: 400px;
+    display:none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px black;
+    z-index: 1;
+    margin-bottom:100px ;
+}
+
+.form-champ{
+     border: none;
+    border-radius: 0;
+    border-bottom: 2px solid #ffffff; 
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.prendre_contact p{
+    color:#c4c4c4;
+}
+
+.prendre_contact form label{
+    font-size: 18px;
+}
+
+.prendre_contact .news button{
+    border-radius: 0;
+    color: #ffffff;
+    font-size: 12px;
+    border: 1px solid #c4c4c4;
+}
+
+.prendre_contact form #submit{
+    background-image: linear-gradient(-45deg,#b11313,rgb(116, 112, 112));
+    border-radius: 0;
+    border: none;
+    padding: 10px 30px;
+}
+.prendre_contact option{
+    background-image: linear-gradient(-45deg,#183241,#3f3c3c);
+    padding: 10px;
+}
+
+.peti-ico{
+    display:flex;
+    justify-content: space-around;
+    width:200px;
+   margin: auto;
+}
+.peti-ico span{
+    padding: 2px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #19587d;
+    border-radius: 100%;
+}
+.rong{
+    background-color: #19587d;
+}
+
+.dropdown{
+    text-decoration: none;
+}
+
+.footer-container{
+    margin-top: -5%;
+}
+
+.fleche1{
+    margin-top: 10%;
+}
+
+.game{
+    padding-bottom: 30%;
+}
+
+
+.landing_game{
+    
+    height: 100%;
+    background-image: url("../Assets/Illustrations/Game/Batgame1.png");
+    background-size:cover;
+    
+}
+
+.description,.image-scroll-btn div  img{
+    transform: translateX(-1000px);
+    transition: 2s;
+    z-index: 1;
+}
+
+.bande_annonce img:hover{
+    box-shadow: 0 0 10px #ffffff;
+    cursor: pointer;
+}
+
+.card{
+    cursor: pointer;
+}
+
+.input{
+    background-image: linear-gradient(to left top, #19587D22 ,#EDDEBF22);
+}
+
+.quiz{
+  color: #ffffff;
+}
+
+.quiz .form-check{
+    background-color:#c4c4c4 ;
+    margin: 10px;
+    padding: 0;
+    outline: none;
+}
+
+.quiz .form-check .form-check-input{
+    padding: 20px;
+    border-radius: 0;
+    margin: 10px;   
+}
+/* responsivité du site */
+
+@media screen and (max-width:1100px){
+    .multimedia{
+        display:none;
+    }
+   header{
+       width:70% ;
+   }
+
+   .row .card{
+       width:60%;
+       margin: auto;
+   }
+}
+
+@media screen and (max-width:800px){
+    .border-left{
+        display: none;
+    }
+    .border-right{
+        display: none;
+    }
+    
+    .brorder-top{
+        display: none;
+    }
+
+    .scroll-fixed{
+        display: none;
+    }
+}
+
+
+
